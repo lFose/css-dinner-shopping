@@ -1,0 +1,96 @@
+*{
+	transition: all .1s ease-in;
+	box-sizing: border-box;
+}
+html,
+body{
+	background: rgb(59, 63, 69);
+	margin: 0;
+	padding: 0;
+	border: 5px white solid;
+	font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
+	height: 100%;
+}
+ul{
+	padding: 0;
+}
+ul li{
+	font-size: 15px;
+	list-style-type: none;
+	padding: 0px;
+	background: rgb(136, 131, 158);
+	color: #fff;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+}
+ul li:nth-child(2n){
+	background: rgb(121, 117, 147);
+} 
+ul li .checkbox{
+	font-size: 10px;
+}
+ul li:hover,
+ul li:focus{
+	background: rgb(98, 93, 119);
+	border-top-color:  #fff ;
+	border-bottom-color: #fff ;
+}
+ul li:active{
+	background: red;
+	color: white;
+}
+ul li label input:checked+span,
+ul li label input:checked+span+span{
+	text-decoration: line-through;
+	color: rgb(163, 160, 181);
+}
+
+.header h1{
+	color: rgb(235, 126, 127);
+} 
+.header{
+	background:rgb(74,79,86);
+	text-align: center;
+	padding:10px;
+}
+.main,
+.footer{
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: rgb(235, 126, 127);
+}
+ul li label{
+	display: block;
+	padding: 10px;
+ 
+}
+ul li label:hover,
+ul li label:focus{
+	cursor: pointer;
+}
+.checkbox::after{
+	content: ")";
+	font-size: 10px;
+}
+.checkbox::before{
+	content: "(";
+	font-size: 10px;
+}
+button{
+	display: inline-block;
+	height: 40px;
+	width: 100%;
+	font-size: 15px;
+	background:rgb(74,79,86);
+	border: none;
+	padding: 0;
+	color: rgb(235, 126, 127);
+}
+button:hover,
+button:focus{
+	cursor: pointer;
+}
